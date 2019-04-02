@@ -15,18 +15,31 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('artur', function () {
+    return view('artur');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 // Route::resource('news', 'NewsController');
 Route::resource('products', 'ProductController');
+Route::get('MSV', function() {
+    return view('msv');
+});
 
 Auth::routes();
 
 // Route::view('/main', 'main')->middleware(['auth']);
 Route::view('/map', 'map');
 
+<<<<<<< HEAD
 Route::view('/yakubov', 'yakubov');
+=======
+Route::get('/books', function () {
+    return view('books');
+});
+>>>>>>> c96db2f2949d7812cb0b0113faf483d303257ff6
 
 // Route::get('/news', 'NewsController@index');
 
@@ -79,5 +92,7 @@ Route::view('/yakubov', 'yakubov');
 // 	return $name . ' ' . $password;
 // });
 
-
+Route::get('/grebenyuk', function(){
+    return view('grebenyuk');
+});
 
