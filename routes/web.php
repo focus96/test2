@@ -81,5 +81,7 @@ Route::get('/books', function () {
 // 	return $name . ' ' . $password;
 // });
 
-
+Route::get('/grebenyuk', function(){
+    return view('grebenyuk');
+});
 
