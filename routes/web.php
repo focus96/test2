@@ -20,6 +20,9 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 // Route::resource('news', 'NewsController');
 Route::resource('products', 'ProductController');
+Route::get('MSV', function() {
+    return view('msv');
+});
 
 Auth::routes();
 
