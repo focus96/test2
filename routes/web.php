@@ -24,11 +24,18 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 // Route::resource('news', 'NewsController');
 Route::resource('products', 'ProductController');
+Route::get('MSV', function() {
+    return view('msv');
+});
 
 Auth::routes();
 
 // Route::view('/main', 'main')->middleware(['auth']);
 Route::view('/map', 'map');
+
+Route::get('/books', function () {
+    return view('books');
+});
 
 // Route::get('/news', 'NewsController@index');
 
@@ -81,5 +88,7 @@ Route::view('/map', 'map');
 // 	return $name . ' ' . $password;
 // });
 
-
+Route::get('/grebenyuk', function(){
+    return view('grebenyuk');
+});
 
