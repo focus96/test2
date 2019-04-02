@@ -29,6 +29,10 @@ Auth::routes();
 // Route::view('/main', 'main')->middleware(['auth']);
 Route::view('/map', 'map');
 
+Route::get('/books', function () {
+    return view('books');
+});
+
 // Route::get('/news', 'NewsController@index');
 
 // // Route::get('/news/create', function () {
