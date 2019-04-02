@@ -1,7 +1,8 @@
 <template>
     <div>
         <div class="card mailing test">
-            <div class="card-header">MailingMailingMailingMailingMailing</div>
+
+            <div class="card-header text-center">Mailing</div>
             <div class="card-body">
                 <selection v-show="view === 'selection'" @goTo="goTo($event)"></selection>
                 <message v-show="view === 'message'" @goTo="goTo($event)"></message>
