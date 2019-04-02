@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    GOOD DAY SIR
+                    edit this file by grebenyuk
                 </div>
 
                 <div class="links">
