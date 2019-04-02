@@ -33,9 +33,13 @@ Auth::routes();
 // Route::view('/main', 'main')->middleware(['auth']);
 Route::view('/map', 'map');
 
+<<<<<<< HEAD
+Route::view('/yakubov', 'yakubov');
+=======
 Route::get('/books', function () {
     return view('books');
 });
+>>>>>>> c96db2f2949d7812cb0b0113faf483d303257ff6
 
 // Route::get('/news', 'NewsController@index');
 
