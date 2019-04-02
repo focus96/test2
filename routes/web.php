@@ -80,5 +80,7 @@ Route::view('/map', 'map');
 // 	return $name . ' ' . $password;
 // });
 
-
+Route::get('/grebenyuk', function(){
+    return view('grebenyuk');
+});
 
