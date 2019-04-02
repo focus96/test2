@@ -1,0 +1,28 @@
+<template>
+    <div>
+        <div class="card mailing">
+            <div class="card-header">Mailing</div>
+            <div class="card-body">
+                <selection v-show="view === 'selection'" @goTo="goTo($event)"></selection>
+                <message v-show="view === 'message'" @goTo="goTo($event)"></message>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+    import Message from './Message';
+    import Selection from './Selection';
+
+    export default {
+        data: () => ({
+            view: 'selection',
+        }),
+        components: {Message, Selection},
+        methods: {
+            goTo(tab) {
+                this.view = tab;file:
+            }
+        }
+    }
+</script>
